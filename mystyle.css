@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box
+}
+
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 14px 16px;
+    border-color: black;
+    border-width: 2px;
+    border-right-style: none;
+    border-left-style: none;
+    background-color: white;
+    color: black;
+}
+
+.topnav h1 {
+    float: left;
+    text-align: center;
+    display: block;
+    background-color: white;
+    color: red;
+}
+
+.topnav a:hover {
+    background-color: lightslategrey;
+}
+
+.container {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h3{
+    text-align: center;
+    overflow: hidden;
+    width: 80%;
+
+}
+
+main blockquote {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.main_container {
+    width: 100%;
+    background-color: aquamarine;
+    
+}
+
+.main_column {
+    width: 33.33%;
+    display: block;
+    float: left;
+    background-color: beige;
+    margin:0px;
+}
+
+.card {
+    background-color: lightpink;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card img {
+    margin-bottom: 10px;            
+    border-style: inherit;
+    border-radius: 25px;
+
+}
+
+
+.column_main_left {
+    float: left;
+    width: 75%;
+}
+
+.column_main_right {
+    float: right;
+    width: 25%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.footer_middle {
+    text-align: center;
+    background-color: sandybrown;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+div {
+    margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .column_main_left,
+    .column_main_right {
+        width: 100%;
+    }
+
+    .column_main_right {
+        padding-left: 0px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .topnav a {
+        float: none !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card image {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
